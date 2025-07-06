@@ -1,0 +1,21 @@
+// constants/index.ts
+
+// Example API base URL (you can replace this later)
+export const API_BASE_URL = 'https://api.example.com';
+
+// Example placeholder text
+export const DEFAULT_DESCRIPTION = 'Beautiful listing in the heart of the city.';
+
+// Placeholder data (can be used for mock listings)
+export const SAMPLE_CARDS = [
+  {
+    title: 'Modern Apartment',
+    description: 'Spacious apartment with city view',
+    imageUrl: '/assets/property1.jpg',
+  },
+  {
+    title: 'Cozy Cabin',
+    description: 'A peaceful retreat in the woods',
+    imageUrl: '/assets/property2.jpg',
+  },
+];
