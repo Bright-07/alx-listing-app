@@ -1,25 +1,24 @@
-// pages/index.tsx
-import React from 'react';
-import Card from '../components/common/Card';
+import React from "react";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div className="p-8 space-y-6">
-      <h1 className="text-3xl font-bold text-blue-600">Welcome to ALX Listing App</h1>
-      <p className="text-lg text-gray-700 mb-6">This is the homepage of your Airbnb clone.</p>
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/assets/images/hero.jpg')",
+        }}
+      >
+        <div className="text-center text-white">
+          <h1 className="text-5xl font-bold">Welcome to the Listing App</h1>
+          <p className="mt-4 text-xl">Find your next home today</p>
+        </div>
+      </section>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <Card
-          title="Seaside Villa"
-          description="Enjoy beautiful ocean views."
-          image="/assets/property1.jpg"
-        />
-        <Card
-          title="Mountain Cabin"
-          description="Cozy retreat in the mountains."
-          image="/assets/property2.jpg"
-        />
-      </div>
+      {/* More sections here */}
     </div>
   );
-}
+};
+
+export default Home;
